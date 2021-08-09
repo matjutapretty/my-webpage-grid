@@ -1,0 +1,142 @@
+body {
+    font-family: Handlee;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+.pretty {
+    position: relative;
+    background-image: url('https://img.peapix.com/e43b851037804a8c9731d36bb3eab7dd_480.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 390vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pretty::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+table, th, td {
+  border: 10px solid black;
+  border-collapse: collapse;
+  border-color: #080808;
+}
+th, td {
+  padding: 15px;
+}
+th {
+  text-align: center;
+  font-size: medium;
+  font-weight: 15em;
+}
+td {
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+}
+table {
+  border-spacing: 5px;
+  object-position: center;
+}
+img {
+    border-radius: 10%;
+    max-width: 50%;
+    display: block;
+    border-style: groove;
+    animation-play-state: running;
+    align-items: left;
+    object-position: left;
+}
+.col-4 {
+    text-align: center;
+
+}
+.footer {
+   position: relative;
+   text-align: center;
+   margin-top: 1em;
+   bottom: 0;
+   font: italic;
+   font-size: 10px;
+   font-weight: unset;
+   font-style: italic;
+  }
+  h4 {
+    font-size: large;
+    font-weight: bolder;
+  }
+  h6 {
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  a { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color: black; }
+a:focus { text-decoration: none; color: black; }
+a:hover, a:active { text-decoration: none; color: black; }
+
+.nav {
+  background-color: rgba(175, 177, 180, 0.336);
+    height: auto;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav a {
+    color: pink;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+  .nav a:hover {
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    animation: ease;
+}
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 51, 110, 0.7);   
+  border-radius: 25px;   
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(201, 19, 110, 0.9);
+  border: 1px solid black; 
+}
+
+.introduction {
+    position: relative;
+    top: 50px;
+}
+.City {
+    position: relative;
+    top: 5px;
+}

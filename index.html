@@ -6,112 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> my-webpage-grid </title>
     <link rel="stylesheet" href="simple-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="e43b851037804a8c9731d36bb3eab7dd_480.png" type="image/png">
+
 </head>
-<body>
-  
-    <style>
-body {
-background-image: url('data:image/jpeg;base64,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');
-
-}
-table, th, td {
-  border: 3px solid black;
-  border-collapse: collapse;
-  border-color: #ffffff;
-}
-th, td {
-  padding: 15px;
-}
-th {
-  text-align: center;
-  color: #ffffff;
-  font-size: medium;
-  font-weight: 10em;
-}
-td {
-    text-align: center;
-    color: #ffffff;
-    font-size: medium;
-    font-weight: bolder;
-}
-table {
-  border-spacing: 5px;
-  object-position: center;
-  border-color: #ffffff;
-}
-img {
-    border-radius: 10%;
-    max-width: 50%;
-    display: block;
-    border-style: groove;
-    animation-play-state: running;
-    align-items: left;
-    object-position: left;
-}
-.col-4 {
-    text-align: center;
-    text-emphasis-color: #ffffff;
-
-}
-.footer {
-   position: relative;
-   text-align: center;
-   margin-top: 1em;
-   bottom: 0;
-   font: italic;
-   font-size: 10px;
-   font-weight: unset;
-   font-style: italic;
-  }
-  h1 {
-    color: #ffffff;
-  }
-  h3 {
-    color: #ffffff;
-  }
-  h4 {
-    color: #ffffff;
-    font-size: large;
-    font-weight: bolder;
-  }
-  h2 {
-    color: #ffffff;
-  }
-  h6 {
-    color: #ffffff;
-    font-size: large;
-    font-weight: bolder;
-  }
-  .places {
-    color: black;
-  }
-
-    </style>
+<body background="cape town.png">
+        
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="my-Web-page">Plain html</a>
+    <a href="my-webpage-grid">Simple-Grid</a>
+</div>
       
-      
+<div class="pretty">
+
     <div class="container">
       
+      <div class="introduction">
         <div class="row">
+
             <div class="col-6">
-              
     <h1> Matjuta Pretty </h1>
         </div>
-           
 
-           <div class="col-6">
-
-        <div class="image">
-            <img src="Pretty.png" width="200px" height="300px" class="left"> 
+    <div class="col-6">
+    <img src="Pretty.png" width="150px" height="200px" class="left"> 
+        </div>
         </div>
 </div>
-</div>
 
+<div class="City">
             <div class="row">
             <div class="col-12">
     <h2>Which City</h2>
-        </div>
-        
+        </div>        
 </div>
+</div>
+
 <div class="row">
     <div class="col-6">
     <img src="south-africa-cape-town.png" width="200px" height="200px" class="right">
@@ -130,99 +61,104 @@ img {
   </div>
 </div>
 
-</div>
 
-</div>
 <div class="row">
 <div class="col-12">
 
 <h2> Foreign Language </h2>
 <div>
 <h6>I want to learn Portuguese because I have a Portuguese friend and his family does not know English too well, I want to be able to communicate with them when I go visit.</h6>
-<div>
+</div>
+</div>
 
 <div class="row">
     <div class="col-12">
+
     <table style="width:50%" class="center">
         <tr>
           <th> English Phrases </th>
           <th> Portuguese Phrases </th>
         </tr>
+
         <tr>
           <td>Hello!</td>
           <td>Olá  </td>
         </tr>
+
         <tr>
           <td> How are you doing? </td>
           <td> como você está? </td>
         </tr>
+
         <tr>
             <td> It was a pleasure meeting you! </td>
             <td> Foi um grande prazer conhecê-lo! </td>
           </tr>
+
       </table>
+
     </div>
     </div>
 
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-12">
-<h2> Historical Places in Limpopo </h2>
-</div>
-</div>
-
-<div class="row">
-  <div class="col-4">
-<h3> Debengeni Falls </h3>
-<img src="Debengeni falls.png" width="200px" height="200px" class="center">
-
-<div>
-<h6>- Has a magical spot for picnicking </h6>
-<div>
-<h6>- Swimming in the crystal pool</h6>
-</div>
-<h6>- Hiking and rare species of birds</h6>
-</div>
-</div>
-
-<div class="col-4">
-<h3> Arend Dieperink Museum </h3>
-<img src="Mapungubwe.png" width="200px" height="200px" class="center">
-
-<div>
-<h6>- Museum Tour</h6>
-<h6>- Heritage Tours</h6>
-<h6> Game Drives</h6>
-</div>
-</div>
-
-<div class="col-4">
-  <h3> Mapungubwe National Park </h3>
-  <img src="Arend-Dieperink-Museum.png" width="200px" height="200px" class="center">
-
-  <div>
- <h6> - It contains cultural and historical artefacts from the Voortrekker and Sotho people.</h6>
-  <div>
-  <h6>- It contains a three-million-year-old human predecessor, Australothipicus africanus, found at the nearby Makapan's Cave.</h6>
-  </div>
-  <h6>- The display is a replica of a bushveld house, a "Caves through the Ages" exhibition as well as old farm implements and modes of transport.</h6>
-  </div>
-  </div>
-  </div>
-  </div>
-
-
+    <div class="row">
+      <div class="col-12">
+  
+      <h2> Historical Places in Limpopo </h2>
       </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+      <h3> Debengeni Falls </h3>
+
+      <img src="Debengeni falls.png" width="200px" height="200px" class="center">
+      
+      <div>
+      <h6>- Has a magical spot for picnicking </h6>
+      <div>
+      <h6>- Swimming in the crystal pool</h6>
+      </div>
+      <h6>- Hiking and rare species of birds</h6>
+      </div>
+      </div>
+      
+      <div class="col-4">
+      <h3> Arend Dieperink Museum </h3>
+
+      <img src="Mapungubwe.png" width="200px" height="200px" class="center">
+      
+      <div>
+      <h6>- Museum Tour</h6>
+      <h6>- Heritage Tours</h6>
+      <h6> Game Drives</h6>
+      </div>
+      </div>
+      
+      <div class="col-4">
+        <h3> Mapungubwe National Park </h3>
+
+        <img src="Arend-Dieperink-Museum.png" width="200px" height="200px" class="center">
+      
+        <div>
+       <h6> - It contains cultural and historical artefacts from the Voortrekker and Sotho people.</h6>
+        <div>
+        <h6>- It contains a three-million-year-old human predecessor, Australothipicus africanus, found at the nearby Makapan's Cave.</h6>
+        </div>
+        <h6>- The display is a replica of a bushveld house, a "Caves through the Ages" exhibition as well as old farm implements and modes of transport.</h6>
+        </div>
+        </div>
+        </div>
+      
+
+</div>
+
+</div>
+
       <div class="footer" >
-        <h4>Matjuta Pretty | My Web Page | @Uj & Accuture CodeX | 2021 </h4>
+        <h4>Matjuta Pretty | My Web Page - Simple-Grid | @Uj & Accuture CodeX | 2021 </h4>
       </div>
 
-          
+    </div>
   
-  
-    
 </body>
 </html>
